@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', serif;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    align-items: center;
+    display: flex;
+    width: 750px;
+    max-height: 530px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#mobile-image {
+    display: none;
+}
+
+#desktop-image {
+    width: 50%;
+}
+
+.content {
+    margin-left: 40px;
+}
+
+#small-heading {
+    font-weight: 500;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 30px;
+}
+
+#item-name {
+    width: 60%;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    margin-bottom: 30px;
+    line-height: 1;
+}
+
+#item-desc {
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 25px;
+    width: 80%;
+    line-height: 1.6;
+}
+
+.item-price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+#discount-price {
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-size: 35px;
+}
+
+#original-price {
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+#add-to-cart {
+    text-decoration: none;
+    padding: 16px 90px;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 500;
+}
+
+#add-to-cart:hover {
+    background-color: hsl(158, 36%, 23%);
+    cursor: pointer;
+}
+
+#cart-icon {
+    margin-right: 10px;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+}
+
+@media (max-width: 750px) {
+
+    .container {
+        max-height: 1200px;
+        height: 660px;
+        width: 375px;
+        flex-direction: column;
+    }
+
+    #mobile-image {
+        width: 100%;
+        display: flex;
+    }
+    
+    #desktop-image {
+        display: none;
+    }
+
+    #small-heading {
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+    
+    #item-name {
+        width: 90%;
+        margin-bottom: 15px;
+    }
+
+    #item-desc {
+        width: 87%;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .item-price {
+        margin-bottom: 30px;
+    }
+    
+}
